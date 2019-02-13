@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Restaurant Recommendation System </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+
+</head>
+
+<body>
+
+<div class='container'>
+    <div style="text-align:center;">
+        <h1 style="color: rgb(0,139,139);"> Restaurant Recommendation Engine </h1>
+        <h2 style="color: rgb(0,139,139);"> Sumith Gannarapu </h2>
+    </div>
+</div>
+
+<div class='container'>
+    <div style="text-align:center;">
+                <img src="{{url_for('static', filename='Quest.png')}}", height="290" width="290">
+    </div>
+</div>
+
+<form action="" method="post" role="form">
+    <div class="container">
+        <div style="text-align:center;" class="form-group">
+            <!--<label for="words">Document Content:</label>-->
+            <input type="text" class="form-control" id="words" name="Input Text"
+                   placeholder="Enter search string for relevant restaurents" required>
+            <br>
+            <button type="submit" class="btn btn-success">Predict</button>
+        </div>
+    </div>
+</form>
+
+
+</body>
+</html>
